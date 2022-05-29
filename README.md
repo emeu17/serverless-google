@@ -1,8 +1,8 @@
 # Serverless Google project
 
-Right now only contains a test function.
+Contains a test function returning "This is a test route on Google Cloud!"
 
-baseurl/emeu17-serverless-dev-first    - test route
+baseurl/test    - test route
 
 # Google Functions
 

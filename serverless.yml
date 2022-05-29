@@ -28,7 +28,12 @@ package:
 
 functions:
   first:
-    handler: http
+    handler: first
+    events:
+      - http: path
+  test:
+    name: test
+    handler: test
     events:
       - http: path
   # NOTE: the following uses an "event" event (pubSub event in this case).

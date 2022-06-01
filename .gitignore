@@ -10,6 +10,9 @@ serverless-emeu17-a109cf336678.json
 # Google
 keyfile.json
 
+# vars for connection to mongodb
+vars.js
+
 # Logs
 *.log
 

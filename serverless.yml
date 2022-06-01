@@ -3,7 +3,7 @@ service: emeu17-serverless
 provider:
   name: google
   stage: dev
-  runtime: nodejs10
+  runtime: nodejs14
   region: us-central1
   project: serverless-emeu17
   # The GCF credentials can be a little tricky to set up. Luckily we've documented this for you here:
@@ -34,6 +34,11 @@ functions:
   test:
     name: test
     handler: test
+    events:
+      - http: path
+  mongopost:
+    name: mongopost
+    handler: mongopost
     events:
       - http: path
   # NOTE: the following uses an "event" event (pubSub event in this case).
